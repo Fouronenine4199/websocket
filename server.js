@@ -13,6 +13,6 @@ wss.on('connection', (ws) => {
 });
 
 // Start the server and bind to the appropriate host and port.
-server.listen(5050, '52.49.171.158', () => {
+server.listen(5050, 'localhost', () => {
   console.log('Server is listening on port 5050');
 });
