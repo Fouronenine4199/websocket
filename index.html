@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Test code</title>
+    </head>
+    <body>
+        <h1>This is the test code</h1>
+        <script>
+        // const WebSocket = require('ws');
+
+const client = new WebSocket('ws://localhost:8080');
+console.log(client)
+
+client.addEventListener('open', () => {
+    alert('yes')
+  console.log('Connected to WebSocket server');
+  client.addEventListener('message', (message) => {
+    console.log(`Received message: ${message.data}`);
+  });
+});
+
+
+
+        </script>
+    </body>
+</html>
